@@ -1,0 +1,343 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+html, body {
+    height: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333;
+    height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    border-radius: 50%;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #ddd; /* Light grey hover color */
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.profile-info {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile-info h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+}
+.home1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  color: #333;
+  padding: 50px;
+  background: linear-gradient(to right, #ffffff 50%, #f7f7f7 50%);
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-container {
+  flex-basis: 50%;
+  padding-right: 30px;
+}
+
+.image-container {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.laptop-image {
+  max-width: 80%;
+  height: auto;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.2);
+}
+
+.text-container h1 {
+  font-size:2rem;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-container p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* About section styling */
+.about-section {
+  background-color: ivory;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-wrap {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.profile-image {
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.personal-info {
+  list-style: none;
+  padding: 0;
+}
+
+.personal-info li {
+  margin-bottom: 10px;
+}
+
+.content {
+  flex: 2;
+}
+
+.content h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.content p {
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-name {
+  font-weight: bold;
+}
+
+.skill-level {
+  color: #007bff;
+}
+
+
+
+/* General styles for all sections */
+.section {
+  padding: 40px;
+  
+}
+
+/* Services Section */
+.services-section {
+  background-color: #e7f3fe;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-box {
+  display: inline-block;
+  width: 280px;
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.service-box h3 {
+  margin: 10px 0;
+}
+
+.service-box p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+
+.resume-section {
+  background-color: ivory;
+  color: #333;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.skill-percentage {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #007bff;
+}
+
+
+.portfolio-section {
+  text-align: center;
+  padding: 20px;
+background-color:#e7f3fe;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+.project p {
+  text-align: justify;
+}
+
+
+/* Contact Section */
+.contact-section {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  color: #333;
+  padding: 20px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .section {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Sidebar</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="images/leon.jpg" alt="Profile Picture">
+        <div class="profile-info">
+          <h3>Inyangala Leon</h3> <!-- Replace with your full name -->
+          <p>Web Developer</p>
+        </div>
+        <a href="#home"><i class="fas fa-home"></i> HOME</a>
+        <a href="#about"><i class="fas fa-user"></i> ABOUT</a>
+        <a href="#services"><i class="fas fa-cogs"></i> SERVICES</a>
+        <a href="#resume"><i class="fas fa-graduation-cap"></i> RESUME</a>
+        <a href="#portfolio"><i class="fas fa-blog"></i> PORTFOLIO</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a>
+    </div>
+    
+    <div class="main-content" id="content">
+      <!-- Content will be loaded here based on sidebar navigation -->
+      <div id="home" class="home1">
+        <div class="content-wrapper">
+          <div class="text-container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover a world of innovation, learning, and growth. Explore my portfolio and get in touch to learn more.</p>
+          </div>
+          <div class="image-container">
+            <img src="/images/laptop.jpg" alt="Laptop" class="laptop-image">
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div id="about" class="about-section">
+        <div class="container">
+          <div class="profile-wrap">
+            <img src="images/leon.jpg" alt="Profile Picture" class="profile-image">
+            <ul class="personal-info">
+              <li><strong>Age:</strong> 22</li>
+              <li><strong>Email:</strong> leoninyangala@gmail.com</li>
+              <li><strong>Phone:</strong> +254797660649</li>
+              <li><strong>Website:</strong> <a href="http://159.100.9.179:9050/">BLOG</a></li>
+            </ul>
+          </div>
+          <div class="content">
+            <h2>About Me</h2>
+            <p>Hello! I'm Inyangala Leon, a passionate web developer based in Nairobi. My journey in the digital realm began 4 years ago, and since then, I've been crafting delightful online experiences.</p>
+            <p>My toolbox includes HTML, CSS, JavaScript, and a variety of frameworks. I believe that great design is not just visually appealing—it's also intuitive and responsive. Whether it's a sleek portfolio, an e-commerce platform, or a dynamic web app, I'm up for the challenge.</p>
+           <p>My toolbox includes:</p>
+            <ul class="skills-list">
+              <li>
+                <span class="skill-name">HTML, CSS, JavaScript:</span>
+                <span class="skill-level">90%</span>
+              </li>
+              <li>
+                <span class="skill-name">Node.js, Express.js:</span>
+                <span class="skill-level">80%</span>
+              </li>
+              <li>
+                <span class="skill-name">SQL, MongoDB:</span>
+                <span class="skill-level">70%</span>
+              </li>
+              <li>
+                <span class="skill-name">Responsive Design, RESTful APIs:</span>
+                <span class="skill-level">70%</span>
+              </li>
+            </ul>
+           <!--  <a href="contact.html" class="cta-button">Get in Touch</a> -->s
+          </div>
+        </div>
+      </div>
+    
+      
+      <!-- Services Section -->
+      <div id="services" class="services-section">
+        <h2>Services</h2>
+        <p>I provide a variety of web development services tailored to help you succeed online.</p>
+        <div class="service-box">
+          <span class="icon">💻</span>
+          <h3>Web Design and Development</h3>
+          <p>I create visually appealing, user-friendly, and responsive websites using the latest technologies.</p>
+        </div>
+        <div class="service-box">
+          <span class="icon">🛒</span>
+          <h3>E-commerce Solutions</h3>
+          <p>From product listings to payment integration, I develop comprehensive e-commerce solutions that drive sales.</p>
+        </div>
+        <div class="service-box">
+          <span class="icon">🔍</span>
+          <h3>Search Engine Optimization (SEO)</h3>
+          <p>My SEO services ensure that your website ranks higher in search engine results, driving organic traffic and increasing visibility.</p>
+        </div>
+        <div class="service-box">
+          <span class="icon">🛠</span>
+          <h3>Website Maintenance and Support</h3>
+          <p>I offer ongoing website maintenance and support to ensure your site runs smoothly and stays updated.</p>
+        </div>
+      </div>
+      
+      
+     
+      <div id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <div id="experience" class="section">
+          <h3>Experience</h3>
+          <p>With a rich background in web development, I've worked on diverse projects across various industries.</p>
+          <p>Starting as a junior developer, I've grown into a lead developer role, managing complex projects </p>
+          <p>Key Projects:</p>
+          <ul>
+            <li>Developed an e-commerce platform.</li>
+            <li>Created a blog website</li>
+          </ul>
+          <p>Worked with clients  from small businesses, delivering tailored web solutions.</p>
+         
+        </div>
+        
+        <div id="education" class="section">
+          <h3>Education</h3>
+          <p>My academic background has equipped me with a strong foundation in web development and related fields.</p>
+          <p>Formal Education:</p>
+          <ul>
+            <li>Diploma in Information Technology from Kabarak University.</li>
+          </ul>
+         
+          <p>Continued Learning:</p>
+          <ul>
+            <li>Regularly attend workshops and online courses to stay updated with the latest trends and technologies in web development.</li>
+          </ul>
+        </div>
+      
+        <div id="skills" class="section">
+          <h3>Skills</h3>
+          <p>My technical skills span a range of programming languages and frameworks:</p>
+          <div class="skill">
+            <span>HTML, CSS, JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-percentage" style="width: 90%;"></div>
+            </div>
+          </div>
+          
+          <div class="skill">
+            <span>Node.js, Express.js</span>
+            <div class="skill-bar">
+              <div class="skill-percentage" style="width: 70%;"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <span>sql,MongoDB</span>
+            <div class="skill-bar">
+              <div class="skill-percentage" style="width: 65%;"></div>
+            </div>
+          </div>
+          <!-- Add more skills as needed -->
+        </div>
+      </div>
+      
+      <div id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <div class="projects-container">
+         
+          <div class="project">
+            <a href="http://159.100.9.179:9050/" target="_blank">
+            <img src="images/blog.jpeg" alt="Project 3" class="project-image">
+            <h3>Custom Blog</h3>
+          </a>
+            <p>Click the image to view the website</p>
+          </div>
+          <!-- Add your fourth project here -->
+          <div class="project">
+            <img src="images/shoppin.jpeg" alt="Project 4" class="project-image">
+            <h3>E-commerce website</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      
+      <!-- Contact Section -->
+      <div id="contact" class="contact-section">
+        <div class="contact-info">
+          <h2>Contact</h2>
+          <p>I'd love to hear from you! Whether you have a project in mind, a question, or just want to say hello, feel free to reach out.</p>
+         <p>  <span class="icon fa fa-envelope"></span>Email: <a href="mailto:leoninyangala@gmail.com">leoninyangala@gmail.com</a></p>
+         <p> <span class="icon fa fa-phone"></span>Phone:+254797660649</p>
+          <div class="social-icons">
+            <a href="#" class="icon fa fa-facebook"></a>
+            <a href="#" class="icon fa fa-twitter"></a>
+            <!-- Add more social media icons here -->
+            
+            
+          </div>
+        </div>
+       <!--  <div class="contact-form">
+            <h3>Send a Message</h3>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        -->
+      </div>
+      
+      
+
+    </div>
+    
+
+</body>
+</html>
