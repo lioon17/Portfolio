@@ -3,18 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Inyangala Leon</title>
+<title>Interactive Sidebar</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
 </head>
 <body>
-
-    <div class="sidebar">
-        <img src="images/leon.jpg" alt="Profile Picture">
+  <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Hamburger menu icon -->
+    <div class="sidebar" id="sidebar">
+        <span class="close-icon" id="close-icon">&times;</span> <!-- Close icon -->
         <div class="profile-info">
-          <h3>Inyangala Leon</h3> <!-- Replace with your full name -->
-          <p>Web Developer</p>
+            <img src="images/leon.jpg" alt="Profile Picture">
+            <h3>Inyangala Leon</h3>
+            <p>Web Developer</p>
         </div>
         <a href="#home"><i class="fas fa-home"></i> HOME</a>
         <a href="#about"><i class="fas fa-user"></i> ABOUT</a>
@@ -23,20 +24,21 @@
         <a href="#portfolio"><i class="fas fa-blog"></i> PORTFOLIO</a>
         <a href="#contact"><i class="fas fa-envelope"></i> CONTACT</a>
     </div>
-    
-    <div class="main-content" id="content">
-      <!-- Content will be loaded here based on sidebar navigation -->
-      <div id="home" class="home1">
-        <div class="content-wrapper">
-          <div class="text-container">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Discover a world of innovation, learning, and growth. Explore my portfolio and get in touch to learn more.</p>
-          </div>
-          <div class="image-container">
-            <img src="/images/close.jpg" alt="Laptop" class="laptop-image">
-          </div>
+
+  <div class="main-content" id="content">
+    <!-- Content will be loaded here based on sidebar navigation -->
+    <div id="home" class="home1">
+      <div class="content-wrapper">
+        <div class="text-container">
+          <h1>Welcome to My Portfolio</h1>
+          <p>Discover a world of innovation, learning, and growth. Explore my portfolio and get in touch to learn more.</p>
+        </div>
+        <div class="image-container">
+          <img src="/images/laptop.jpg" alt="Laptop" class="laptop-image">
         </div>
       </div>
+    </div>
+    
       
 
 
@@ -220,7 +222,29 @@
       
 
     </div>
-    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('sidebar');
+    const closeIcon = document.getElementById('close-icon');
+
+    menuIcon.addEventListener('click', function() {
+        sidebar.style.left = '0';
+    });
+
+    closeIcon.addEventListener('click', function() {
+        sidebar.style.left = '-250px';
+    });
+
+    // Close the sidebar when clicking outside of it
+    document.addEventListener('click', function(event) {
+        if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
+            sidebar.style.left = '-250px';
+        }
+    });
+});
+
+    </script>
 
 </body>
 </html>
