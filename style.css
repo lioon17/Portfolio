@@ -8,59 +8,83 @@ body {
 html, body {
     height: 100%;
 }
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Hide by default */
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
 
 .sidebar {
-    width: 250px;
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333;
-    height: 100vh;
-    position: fixed;
-    overflow-x: hidden;
-    padding-top: 20px;
+  width: 250px;
+  background-color: #f0f0f0;
+  color: #333;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.3s;
+  z-index: 999;
 }
 
 .sidebar img {
-    display: block;
-    margin: auto;
-    width: 80%;
-    border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 50%;
 }
 
 .sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #333;
-    display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
 }
 
 .sidebar a:hover {
-    background-color: #ddd; /* Light grey hover color */
+  background-color: #ddd;
 }
 
 .sidebar i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .profile-info {
-    text-align: center;
-    padding: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 .profile-info h3 {
-    color: #333;
-    margin-bottom: 5px;
+  color: #333;
+  margin-bottom: 5px;
 }
 
 .profile-info p {
-    color: #666;
-    font-size: 14px;
+  color: #666;
+  font-size: 14px;
 }
 
+.close-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none; /* Hide by default */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+
 .main-content {
-    margin-left: 250px;
-    padding: 20px;
-    flex-grow: 1;
+  margin-left: 250px;
+  padding: 20px;
+  flex-grow: 1;
 }
 .home1 {
   display: flex;
@@ -339,5 +363,78 @@ button {
 @media (max-width: 768px) {
   .section {
     padding: 20px;
+  }
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+}
+
+.close-icon {
+    display: block;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    left: -250px;
+}
+
+.main-content {
+    padding: 20px;
+    margin-left: 0;
+}
+
+
+  .home1 {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .text-container,
+  .image-container {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .profile-wrap,
+  .content {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .skills-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-box {
+    width: 90%;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 90%;
+  }
+
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    flex-basis: 100%;
+    margin-bottom: 20px;
   }
 }
